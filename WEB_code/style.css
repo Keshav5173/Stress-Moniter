@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+::-webkit-scrollbar{
+    width: 5px; 
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    /* visibility: hidden; */
+}
+#main{
+    width: 100vw;
+    position: relative;
+    position: fixed;
+    height: 100vh;
+    background-color: #3d5a80;
+    overflow-y: auto;
+}
+#nav{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: rgba(152, 193, 217,0.4);
+    color: white;
+}
+#graphs{
+    cursor: pointer;
+}
+#data{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+#gsrGraph{
+    position: absolute;
+    left: 5vw;
+    top: 12vh;
+    width: 90vw;
+    height: 150vh;
+    background-color: rgb(224, 251, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: none;
+    overflow-y: auto;
+    box-shadow: 0px 0px 20px 10px black;
+}
+#cross{
+    position: absolute;
+    position: fixed;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: rgb(238, 108, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 96%;
+    top: 13%;
+    /* transform: translateX(-148%); */
+    visibility: hidden;
+    color: white;
+    
+}
